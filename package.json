@@ -1,0 +1,41 @@
+{
+  "name": "serpjet-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for SERPJET — Google Search results for AI agents. 1,000 free searches/month, recurring, no credit card required.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "serpjet-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', 0o755)\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "serp",
+    "google-search",
+    "search-api",
+    "web-search",
+    "ai-agents"
+  ],
+  "homepage": "https://serpjet.io",
+  "mcpName": "io.github.jibaoproxyofficial-pixel/serpjet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jibaoproxyofficial-pixel/serpjet-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
