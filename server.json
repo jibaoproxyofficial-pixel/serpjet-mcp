@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.serpjet/serpjet-mcp",
+  "description": "Google SERP API for AI agents. 10 result types incl. shopping. 1,000 free searches/month.",
+  "repository": {
+    "url": "https://github.com/jibaoproxyofficial-pixel/serpjet-mcp",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "serpjet-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SERPJET_API_KEY",
+          "description": "API key from https://serpjet.io/signup (free tier: 1,000 searches/month)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "websiteUrl": "https://serpjet.io"
+}
